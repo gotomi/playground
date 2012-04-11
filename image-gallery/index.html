@@ -1,0 +1,54 @@
+	<!doctype HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Pure CSS3 slider demo | gotomi.info</title>
+</head>
+<body>
+
+<!-- ul>li*5>input[type=radio][name=slider][id=img$]+label[for=img$][title="title of image$"]+img[src=img/$.jpg][alt="alternate text for image$"]
+ -->
+
+<h1>Pure CSS3 image gallery demo</h1>
+
+<ul>
+	<li>
+		<input type="radio" name="slider" id="img1" checked="checked">
+		<label for="img1" title="Coffee please!">Coffee please!</label>
+		<img src="img/1.jpg" alt="Coffee please!">
+	</li>
+	<li>
+		<input type="radio" name="slider" id="img2">
+		<label for="img2" title="Happy Puppy">Happy Puppy</label>
+		<img src="img/2.jpg" alt="Happy Puppy">
+	</li>
+	<li>
+		<input type="radio" name="slider" id="img3">
+		<label for="img3" title="Jesień / Autumn">Jesień / Autumn</label>
+		<img src="img/3.jpg" alt="Jesień / Autumn">
+	</li>
+	<li>
+		<input type="radio" name="slider" id="img4">
+		<label for="img4" title="HDR Hell">HDR Hell</label>
+		<img src="img/4.jpg" alt="HDR Hell">
+	</li>
+	<li>
+		<input type="radio" name="slider" id="img5">
+		<label for="img5" title="Colours">Colours</label>
+		<img src="img/5.jpg" alt="Colours">
+	</li>
+</ul>
+
+
+
+
+<div class="controls">
+	Autoplay (a little bit javascript): <span id="startSlider"> start </span> <span id="stopSlider"> stop </span>
+</div>
+<script type="text/javascript" src="js/autoslider.js"></script>
+
+
+
+</body>
+</html>
