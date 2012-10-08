@@ -22,20 +22,26 @@
 		this.stopInterval = null;
 	},
 
-	init: function () {
-		var self, stopSlider, startSlider;
-		self = this;
-
-		startStopSlider = document.getElementById('startStopSlider');
-
-		startStopSlider.addEventListener('click', function () {
-			if (self.stopInterval !== null) {
-				self.stop();
-				this.innerHTML='start';
+	toggleSlider: function (e) {
+		if (this.stopInterval !== null) {
+				this.stop();
+				e.target.innerHTML='start';
 			} else {
-				self.start();
-				this.innerHTML='stop';
+				this.start();
+				e.target.innerHTML='stop';
 			};
-		}, false)
+	},
+
+	init: function () {
+		var self = this;
+
+		document.getElementById('startStopSlider').addEventListener('click', function (e) {
+			self.toggleSlider(e);
+		}, false);
+
+		document.querySelector('ul').addEventListener('click', function() {
+			startStopSlider.click();
+		});
+
 	}
 }).init();
