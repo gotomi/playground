@@ -17,7 +17,8 @@ start: function(){
 },
 
 stop: function(){
-	clearInterval(this.stopInterval)
+	clearInterval(this.stopInterval);
+	this.stopInterval = null;
 },
 
 init: function(){
