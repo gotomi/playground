@@ -103,9 +103,9 @@ input:checked + label:after {
   border-radius: 3px;
   background: #ccc;
 }
-.controls span.selected {
+.controls span {
   background: orange;
 }
-.controls span#startSlider:before {
+.controls span#startStopSlider:before {
   content: '»';
 }
