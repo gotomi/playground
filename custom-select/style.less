@@ -1,0 +1,35 @@
+body{
+	background: #fff;
+	color: #333;
+	font-size: 16px;
+	font-family: Georgia, sans-serif;
+	padding: 50px;
+}
+
+.custom-select{
+	position: relative;
+	display: inline-block;
+	select{
+		background: #eee;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 6px;
+		min-width: 150px;
+		-webkit-appearance:none;
+		outline: none;
+		font-family:inherit;
+		font-size: 80%;
+		&:focus{
+			box-shadow: 0 0 5px #bbb;
+		}
+	}
+	svg{
+		position: absolute;
+		right: 4px;
+		top: 3px;
+		pointer-events:none;
+	}
+}
